@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <div class="container-fluid bg-img w-full h-screen object-cover" style="background-image:linear-gradient(360deg, rgba(0, 0, 0, 0.8500) 8.000%, rgba(0, 0, 0, 0.8465) 15.67%, rgba(0, 0, 0, 0.8361) 23.33%, rgba(0, 0, 0, 0.8187) 31.00%, rgba(0, 0, 0, 0.7944) 38.67%, rgba(0, 0, 0, 0.7632) 46.33%, rgba(0, 0, 0, 0.7250) 54.00%, rgba(0, 0, 0, 0.6868) 61.67%, rgba(0, 0, 0, 0.6556) 69.33%, rgba(0, 0, 0, 0.6312) 77.00%, rgba(0, 0, 0, 0.6139) 84.67%, rgba(0, 0, 0, 0.6035) 92.33%, rgba(0, 0, 0, 0.6000) 100.0%), url('./banner.jpg');">
+        <div class="bg-img-container @apply absolute w-full h-screen overflow-hidden;">
+            <div class="nav w-[1160px] absolute flex justify-between -translate-x-2/4 translate-y-0 items-center left-2/4 top-[5%]">
+                <a href="#" class="logo text-red-700"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 110.999 30" fill="rgb(229,9,20)" height = "50" width="190"><path d="M105.062 14.28 111 30c-1.75-.25-3.499-.563-5.28-.845l-3.345-8.686-3.437 7.969c-1.687-.282-3.344-.376-5.031-.595l6.031-13.75L94.468 0h5.063l3.062 7.874L105.875 0h5.124zM90.47 0h-4.594v27.25c1.5.094 3.062.156 4.594.343zm-8.563 26.937c-4.187-.281-8.375-.53-12.656-.625V0h4.687v21.875c2.688.062 5.375.28 7.969.405zM64.25 10.657v4.687h-6.406V26H53.22V0h13.125v4.687h-8.5v5.97zm-18.906-5.97V26.25c-1.563 0-3.156 0-4.688.062V4.687h-4.844V0h14.406v4.687zM30.75 15.593c-2.062 0-4.5 0-6.25.095v6.968c2.75-.188 5.5-.406 8.281-.5v4.5l-12.968 1.032V0H32.78v4.687H24.5V11c1.813 0 4.594-.094 6.25-.094zM4.78 12.968v16.375A105 105 0 0 0 0 30V0h4.469l6.093 17.032V0h4.688v28.062c-1.656.282-3.344.376-5.125.625z"/></svg></a>
+                <div class="nav-btns flex gap-4">
+                    <button class="enbtn text-base bg-transparent rounded cursor-pointer transition-all ease-in-out text-white border border-white px-4 py-1 duration-300">English</button>
+                    <button class="enbtn text-base bg-[rgb(229,9,20)] rounded cursor-pointer transition-all ease-in-out text-white border border-transparent hover:bg-[rgb(193,17,25)] px-4 py-1 duration-300">Sign In</button>
+                </div>
+            </div>
+
+            <div class="content absolute -translate-x-2/4 -translate-y-2/4 text-center text-[white] left-2/4 top-2/4 top[50%];">
+                <h1 class="title font-bold text-[70px] mb-5 t-he leading-none">Unlimited movies, TV shows and more</h1>
+                <h3 class="subtitle text-[20px] font-medium mb-7">Unlimited movies, TV shows and more</h3>
+                <p class="text-[16px] font-medium mb-5">Ready to watch? Enter your email to create or restart your membership.</p>
+                <div class="input-container flex justify-center gap-5 items-center">
+                    <input type="email" placeholder="Email address" class="email-input w-[500px] h-[50px] text-base border p-2.5 rounded-[5px] border-solid border-[white]" />
+                    <button class="get-started text-xl bg-[rgb(229_9_20)] text-[white] cursor-pointer transition-all duration-[0.3s] ease-[ease-in-out] font-black flex items-center gap-2.5 justify-center px-5 py-2.5 rounded-[5px] border-[none]"><span>Get Started </span><span class="mt"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" aria-hidden="white" data-icon="ChevronRightStandard"><path fill="currentColor" fill-rule="evenodd" d="m15.586 12-7.293 7.293 1.414 1.414 8-8a1 1 0 0 0 0-1.414l-8-8-1.414 1.414z" clip-rule="evenodd"/></svg></span></button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid trending-container-fluid bg-black absolute w-full">
+        <div class="container mx-auto my-0">
+            <section class="trending max-w-[1160px] mx-auto my-0">
+                <h1 class="trending-title text-3xl font-black text-[white] mt-10 mb-0 mx-0 ">Trending Now</h1>
+                <div class="trending-container grid grid-cols-[repeat(auto-fit,minmax(200px,1fr))] justify-between items-center gap-[40px] mx-auto my-0 pt-2.5 pb-[30px] px-0">
+                    <div class="trending-card relative hover:transition-all duration-[0.1s] ease-[ease-in-out] scale-105"><img src="./trending1" alt=""><span class="item-number absolute left-[-30px] bottom-0 text-[150px] font-bold leading-none text-white mb-2.5">1</span></div>
+                    <div class="trending-card relative hover:transition-all duration-[0.1s] ease-[ease-in-out] scale-105"><img src="./trending2.webp" alt=""><span class="item-number absolute left-[-30px] bottom-0 text-[150px] font-bold leading-none text-white mb-2.5">2</span></div>
+                    <div class="trending-card relative hover:transition-all duration-[0.1s] ease-[ease-in-out] scale-105"><img src="./trending3" alt=""><span class="item-number absolute left-[-30px] bottom-0 text-[150px] font-bold leading-none text-white mb-2.5">3</span></div>
+                    <div class="trending-card relative hover:transition-all duration-[0.1s] ease-[ease-in-out] scale-105"><img src="./trending4" alt=""><span class="item-number absolute left-[-30px] bottom-0 text-[150px] font-bold leading-none text-white mb-2.5">4</span></div>
+                    <div class="trending-card relative hover:transition-all duration-[0.1s] ease-[ease-in-out] scale-105"><img src="./chava.webp" alt=""><span class="item-number absolute left-[-30px] bottom-0 text-[150px] font-bold leading-none text-white mb-2.5">5</span></div>
+                </div>
+            </section>
+
+            <section class="reasons max-w-[1200px] mx-auto my-0">
+                <h1 class="reasons-title text-3xl font-black text-[white] mt-10 mb-0 mx-0">More reasons to join</h1>
+                <div class="reasons-container flex justify-between items-center gap-[30px] mx-auto my-0 pt-2.5 pb-[30px] px-0">
+                    <div class="reasons-card relative h-[300px] w-[350px] p-5 rounded-[10px] bg-[linear-gradient(149deg,_#fff,_#192247_0%,_#210e17_96.86%)]">
+                        <h3 class="card-title text-2xl font-black text-[white] mb-5">Enjoy on your TV</h3>
+                        <p class="card-text text-base font-normal text-[white] mb-5">Watch on smart TVs, PlayStation, Xbox, Chromecast, Apple TV, Blu-ray players and more.</p>
+                        <img src="./tv.png" alt="" class="card-img w-20 h-20 object-cover absolute rounded-[10px] right-5 bottom-5">
+                    </div>
+                    <div class="reasons-card relative h-[300px] w-[350px] p-5 rounded-[10px] bg-[linear-gradient(149deg,_#fff,_#192247_0%,_#210e17_96.86%)]">
+                        <h3 class="card-title text-2xl font-black text-[white] mb-5">Download your shows to watch offline</h3>
+                        <p class="card-text text-base font-normal text-[white] mb-5">Save your favourites easily and always have something to watch.</p>
+                        <img src="./arrow-down.png" alt="" class="card-img w-20 h-20 object-cover absolute rounded-[10px] right-5 bottom-5">
+                    </div>
+                    <div class="reasons-card relative h-[300px] w-[350px] p-5 rounded-[10px] bg-[linear-gradient(149deg,_#fff,_#192247_0%,_#210e17_96.86%)]">
+                        <h3 class="card-title text-2xl font-black text-[white] mb-5">Watch everywhere</h3>
+                        <p class="card-text text-base font-normal text-[white] mb-5">Stream unlimited movies and TV shows on your phone, tablet, laptop and TV.</p>
+                        <img src="./lence.png" alt="" class="card-img w-20 h-20 object-cover absolute rounded-[10px] right-5 bottom-5">
+                    </div>
+                    <div class="reasons-card relative h-[300px] w-[350px] p-5 rounded-[10px] bg-[linear-gradient(149deg,_#fff,_#192247_0%,_#210e17_96.86%)]">
+                        <h3 class="card-title text-2xl font-black text-[white] mb-5">Create profiles for kids</h3>
+                        <p class="card-text text-base font-normal text-[white] mb-5">Send kids on adventures with their favourite characters in a space made just for them — free with your membership.</p>
+                        <img src="./smile.png" alt="" class="card-img w-20 h-20 object-cover absolute rounded-[10px] right-5 bottom-5">
+                    </div>
+                </div>
+        </section>
+
+        <section class="ask-question max-w-[1200px] mx-auto my-0">
+            <h1 class="ask-title text-3xl font-black text-[white] mt-10 mb-0 mx-0">Frequently Asked Questions</h1>
+            <div class="ask-container flex justify-between items-center gap-2.5 flex-col w-[100%] mx-auto my-0 pt-2.5 pb-[30px] px-0">
+                <div class="ask-card bg-[rgb(45,45,45)] text-white w-full flex justify-between items-center mb-0 p-5">
+                    <p class="ask-card-title text-xl text-[white]">What is Netflix?</p>
+                    <span><svg xmlns="http://www.w3.org/2000/svg" fill="none" role="img" viewBox="0 0 36 36" width="36" height="36" data-icon="PlusLarge" aria-hidden="true" class="accordion-heading_iconStyles__199uojx2 accordion-heading_iconStyles_isOpen_false__199uojx4 default-ltr-cache-pxitz0-StyledPlusLarge e164gv2o4">
+                        <path fill="currentColor" d="M17 17V3H19V17H33V19H19V33H17V19H3V17H17Z" clip-rule="evenodd" fill-rule="evenodd"></path></svg></span>
+                </div>
+                <div class="ask-card bg-[rgb(45,45,45)] text-white w-full flex justify-between items-center mb-0 p-5">
+                    <p class="ask-card-title text-xl text-[white]">How much does Netflix cost?</p>
+                    <span><svg xmlns="http://www.w3.org/2000/svg" fill="none" role="img" viewBox="0 0 36 36" width="36" height="36" data-icon="PlusLarge" aria-hidden="true" class="accordion-heading_iconStyles__199uojx2 accordion-heading_iconStyles_isOpen_false__199uojx4 default-ltr-cache-pxitz0-StyledPlusLarge e164gv2o4">
+                        <path fill="currentColor" d="M17 17V3H19V17H33V19H19V33H17V19H3V17H17Z" clip-rule="evenodd" fill-rule="evenodd"></path></svg></span>
+                </div>
+                <div class="ask-card bg-[rgb(45,45,45)] text-white w-full flex justify-between items-center mb-0 p-5 ">
+                    <p class="ask-card-title text-xl text-[white]">Where can I watch?</p>
+                    <span><svg xmlns="http://www.w3.org/2000/svg" fill="none" role="img" viewBox="0 0 36 36" width="36" height="36" data-icon="PlusLarge" aria-hidden="true" class="accordion-heading_iconStyles__199uojx2 accordion-heading_iconStyles_isOpen_false__199uojx4 default-ltr-cache-pxitz0-StyledPlusLarge e164gv2o4">
+                        <path fill="currentColor" d="M17 17V3H19V17H33V19H19V33H17V19H3V17H17Z" clip-rule="evenodd" fill-rule="evenodd"></path></svg></span>
+                </div>
+                <div class="ask-card bg-[rgb(45,45,45)] text-white w-full flex justify-between items-center mb-0 p-5">
+                    <p class="ask-card-title text-xl text-[white]">How do I cancel?</p>
+                    <span><svg xmlns="http://www.w3.org/2000/svg" fill="none" role="img" viewBox="0 0 36 36" width="36" height="36" data-icon="PlusLarge" aria-hidden="true" class="accordion-heading_iconStyles__199uojx2 accordion-heading_iconStyles_isOpen_false__199uojx4 default-ltr-cache-pxitz0-StyledPlusLarge e164gv2o4">
+                        <path fill="currentColor" d="M17 17V3H19V17H33V19H19V33H17V19H3V17H17Z" clip-rule="evenodd" fill-rule="evenodd"></path></svg></span>
+                </div>
+                <div class="ask-card bg-[rgb(45,45,45)] text-white w-full flex justify-between items-center mb-0 p-5">
+                    <p class="ask-card-title text-xl text-[white]">What can I watch on Netflix?</p>
+                    <span><svg xmlns="http://www.w3.org/2000/svg" fill="none" role="img" viewBox="0 0 36 36" width="36" height="36" data-icon="PlusLarge" aria-hidden="true" class="accordion-heading_iconStyles__199uojx2 accordion-heading_iconStyles_isOpen_false__199uojx4 default-ltr-cache-pxitz0-StyledPlusLarge e164gv2o4">
+                        <path fill="currentColor" d="M17 17V3H19V17H33V19H19V33H17V19H3V17H17Z" clip-rule="evenodd" fill-rule="evenodd"></path></svg></span>
+                </div>
+                <div class="ask-card bg-[rgb(45,45,45)] text-white w-full flex justify-between items-center mb-0 p-5">
+                    <p class="ask-card-title text-xl text-[white]">Is Netflix good for kids?</p>
+                    <span><svg xmlns="http://www.w3.org/2000/svg" fill="none" role="img" viewBox="0 0 36 36" width="36" height="36" data-icon="PlusLarge" aria-hidden="true" class="accordion-heading_iconStyles__199uojx2 accordion-heading_iconStyles_isOpen_false__199uojx4 default-ltr-cache-pxitz0-StyledPlusLarge e164gv2o4">
+                        <path fill="currentColor" d="M17 17V3H19V17H33V19H19V33H17V19H3V17H17Z" clip-rule="evenodd" fill-rule="evenodd"></path></svg></span>
+                </div>
+            </div>
+        </section>
+
+        <section class="membership max-w-[1200px] mx-auto my-0 p-[30px]">
+            <p class="membership-title text-base text-center mb-2.5 text-[white]">Ready to watch? Enter your email to create or restart your membership.</p>
+            <div class="membership-container flex justify-center items-center gap-2.5 pt-2.5 pb-[30px] px-0">
+                <input type="email" placeholder="Email address" class="email-input w-[500px] h-[50px] text-base border p-2.5 rounded-[5px] border-solid border-[white]">
+                <button class="get-started text-xl bg-[rgb(229_9_20)] text-[white] cursor-pointer transition-all duration-[0.3s] ease-[ease-in-out] font-black flex items-center gap-2.5 justify-center px-5 py-2.5 rounded-[5px] border-[none]"><span>Get Started </span><span class="mt"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" aria-hidden="white" data-icon="ChevronRightStandard"><path fill="currentColor" fill-rule="evenodd" d="m15.586 12-7.293 7.293 1.414 1.414 8-8a1 1 0 0 0 0-1.414l-8-8-1.414 1.414z" clip-rule="evenodd"/></svg></span></button>
+            </div>
+        </section>
+
+        <section class="footer-menu max-w-[1200px] mx-auto my-0 text-base text-[rgba(255,255,255,0.7)]">
+            <p class="questions pb-[30]">Questions? Call <a href="tel:000-800-919-1743">000-800-919-1743</a> </p>
+            <div class="parent-footer-menu flex justify-between pt-2.5 pb-[30px] px-0">
+                <div class="footer-menu-container flex justify-between flex-col gap-5 pt-2.5 pb-[30px] px-0">
+                    <div class="footer-menu-item"><a href="" class="text-base text-[rgba(255,255,255,0.7)]">FAQ</a></div>
+                    <div class="footer-menu-item"><a href="" class="text-base text-[rgba(255,255,255,0.7)]">Help Center</a></div>
+                    <div class="footer-menu-item"><a href="" class="text-base text-[rgba(255,255,255,0.7)]">Account</a></div>
+                    <div class="footer-menu-item"><a href="" class="text-base text-[rgba(255,255,255,0.7)]">Media Center</a></div>
+                </div>
+                <div class="footer-menu-container flex justify-between flex-col gap-5 pt-2.5 pb-[30px] px-0">
+                    <div class="footer-menu-item"><a href="" class="text-base text-[rgba(255,255,255,0.7)]">Investor Relations</a></div>
+                    <div class="footer-menu-item"><a href="" class="text-base text-[rgba(255,255,255,0.7)]">Jobs</a></div>
+                    <div class="footer-menu-item"><a href="" class="text-base text-[rgba(255,255,255,0.7)]">Ways to Watch</a></div>
+                    <div class="footer-menu-item"><a href="" class="text-base text-[rgba(255,255,255,0.7)]">Terms of Use</a></div>
+                </div>
+                <div class="footer-menu-container flex justify-between flex-col gap-5 pt-2.5 pb-[30px] px-0">
+                    <div class="footer-menu-item"><a href="" class="text-base text-[rgba(255,255,255,0.7)]">Privacy</a></div>
+                    <div class="footer-menu-item"><a href="" class="text-base text-[rgba(255,255,255,0.7)]">Cookie Preferences</a></div>
+                    <div class="footer-menu-item"><a href="" class="text-base text-[rgba(255,255,255,0.7)]">Corporate Information</a></div>
+                    <div class="footer-menu-item"><a href="" class="text-base text-[rgba(255,255,255,0.7)]">Contact Us</a></div>
+                </div>
+                <div class="footer-menu-container flex justify-between flex-col gap-5 pt-2.5 pb-[30px] px-0">
+                    <div class="footer-menu-item"><a href="" class="text-base text-[rgba(255,255,255,0.7)]">Speed Test</a></div>
+                    <div class="footer-menu-item"><a href="" class="text-base text-[rgba(255,255,255,0.7)]">Legal Notices</a></div>
+                    <div class="footer-menu-item"><a href="" class="text-base text-[rgba(255,255,255,0.7)]">Only on Netflix</a></div>
+                </div>
+            </div>
+            <p class="copyright">Netflix Clone by Akash Sahoo - All rights reserved.</p>
+        </section>
+        </div>
+    </div>
+    
+</body>
+</html>
